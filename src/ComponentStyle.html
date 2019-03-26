@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>组件样式</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+  <style> 
+    .container{
+      width: '100%';
+      padding: 16px;
+      overflow: hidden;
+      background: #f2f2f2
+    }
+    .item{
+      width: '100%';
+      height:auto;
+    }
+    li{
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+      line-height: 22px
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- begain -->
+    <div class="item"> 
+      <h3 style="color: #333333;letter-spacing: 2px;">组件名称: InformationList</h3>
+      <div style="width:100%;overflow: hidden;">
+        <div style="width:50%;float: left;"> 
+          <h5>属性</h5>
+          <ul>
+            <li>
+              style （object）
+              <br>
+              <span style="font-size:14px;color: #666">最外层容器样式设置，传递对象类型</span>
+            </li>
+            <li>
+              avatarR （number）
+              <br>
+              <span style="font-size:14px;color: #666">用户头像设置，传递用户头像直径（即宽度）</span>
+            </li>
+            <li>
+              avatarUri（string）
+              <br>
+              <span style="font-size:14px;color: #666">用户头像图片设置</span>
+            </li>
+            <li>
+              title （string）
+              <br>
+              <span style="font-size:14px;color: #666">用户昵称设置</span>
+            </li>
+            <li>
+              subTitle （string）
+              <br>
+              <span style="font-size:14px;color: #666">用户简介设置</span>
+            </li>
+            <li>
+              contentStyle （object）
+              <br>
+              <span style="font-size:14px;color: #666">内容显示部分样式设置</span>
+            </li>
+            <li>
+              content （string）
+              <br>
+              <span style="font-size:14px;color: #666">显示的内容设置</span>
+            </li>
+            <li>
+              imgArr （array)
+              <br>
+              <span style="font-size:14px;color: #666">展示的图片数组设置</span>
+            </li>
+            <li>
+              imgArrStyle (object)
+              <br>
+              <span style="font-size:14px;color: #666">图片显示的样式设置</span>
+            </li>
+            <li>
+              bottomList （array）
+              <br>
+              <span style="font-size:14px;color: #666">底部显示信息设置</span>
+            </li>
+          </ul>
+          <h5>方法</h5>
+          <ul>
+            <li>
+              contentFun （function）
+              <br>
+              <span style="font-size:14px;color: #666">点击内容后执行的函数</span>
+            </li>
+          </ul>
+          <h5>使用</h5>
+          <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+            示例代码
+            <br>
+            &lt;InformationList/&gt;
+          </blockquote>
+          <h5>注意</h5>
+          <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+            
+          </blockquote>
+        </div>
+        <div style="width:50%;float: right;"> 
+          <h5>样式</h5>
+          <img src="./resource/uiimages/dw_informationlist.png" alt="" width="448px" height="970px">
+        </div>
+      </div>
+      <hr>
+    </div>
+    <!-- end -->
+    <!-- begain -->
+    <div class="item"> 
+      <h3 style="color: #333333;letter-spacing: 2px;">组件名称: CommentList</h3>
+      <div style="width:100%;overflow: hidden;">
+          <div style="width:50%;float: left;"> 
+            <h5>属性</h5>
+            <ul>
+              <li>
+                contentStyle （object）
+                <br>
+                <span style="font-size:14px;color: #666">内容部分展示样式设置</span>
+              </li>
+              <li>
+                avatarStyle （object）
+                <br>
+                <span style="font-size:14px;color: #666">用户头像设置</span>
+              </li>
+              <li>
+                userName （string)
+                <br>
+                <span style="font-size:14px;color: #666">用户名称</span>
+              </li>
+              <li>
+                avatarUri (string)
+                <br>
+                <span style="font-size:14px;color: #666">用户头像图片路径</span>
+              </li>
+              <li>
+                commentContent (string)
+                <br>
+                <span style="font-size:14px;color: #666">内容展示区域</span>
+              </li>
+            </ul>
+            <h5>方法</h5>
+            <ul>
+              <li>
+                zFun （function）
+                <br>
+                <span style="font-size:14px;color: #666">点赞执行的方法</span>
+              </li>
+            </ul>
+            <h5>使用</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              示例代码
+              <br>
+              &lt;CommentList/&gt;
+            </blockquote>
+            <h5>注意</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              
+            </blockquote>
+          </div>
+          <div style="width:50%;float: right;"> 
+            <h5>样式</h5>
+            <img src="./resource/uiimages/dw_commentlist.png" alt="" width="448px" height="970px">
+          </div>
+      </div>
+      <hr>
+    </div>
+    <!-- end -->
+    <!-- begain -->
+    <div class="item"> 
+        <h3 style="color: #333333;letter-spacing: 2px;">组件名称: HomeTab</h3>
+        <div style="width:100%;overflow: hidden;">
+          <div style="width:50%;float: left;"> 
+            <h5>属性</h5>
+            <ul>
+              <li>
+                contentStyle （object）
+                <br>
+                <span style="font-size:14px;color: #666">容器样式设置</span>
+              </li>
+              <li>
+                itemStyle （object）
+                <br>
+                <span style="font-size:14px;color: #666">元素样式设置</span>
+              </li>
+              <li>
+                itemList （array）
+                <br>
+                <span style="font-size:14px;color: #666">元素列表信息数据</span>
+              </li>
+            </ul>
+            <h5>方法</h5>
+            <ul>
+              <li>
+                tabFun （function）
+                <br>
+                <span style="font-size:14px;color: #666">点击tab所要执行的函数</span>
+              </li>
+            </ul>
+            <h5>使用</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              示例代码
+              <br>
+              &lt;HomeTab/&gt;
+            </blockquote>
+            <h5>注意</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              
+            </blockquote>
+          </div>
+          <div style="width:50%;float: right;"> 
+            <h5>样式</h5>
+            <img src="./resource/uiimages/dw_hometab.png" alt="" width="448px" height="970px">
+          </div>
+        </div>
+        <hr>
+    </div>
+    <!-- end -->
+    <!-- begain -->
+    <div class="item"> 
+        <h3 style="color: #333333;letter-spacing: 2px;">组件名称: CommodityList</h3>
+        <div style="width:100%;overflow: hidden;">
+          <div style="width:50%;float: left;"> 
+            <h5>属性</h5>
+            <ul>
+              <li>
+                contentStyle （object）
+                <br>
+                <span style="font-size:14px;color: #666">容器样式设置</span>
+              </li>
+              <li>
+                title （string）
+                <br>
+                <span style="font-size:14px;color: #666">标题信息显示设置</span>
+              </li>
+              <li>
+                imguri （string)
+                <br>
+                <span style="font-size:14px;color: #666">图片信息展示</span>
+              </li>
+              <li>
+                score (number)
+                <br>
+                <span style="font-size:14px;color: #666">星级信息展示设置</span>
+              </li>
+              <li>
+                subTitle （string）
+                <br>
+                <span style="font-size:14px;color: #666">副标题设置</span>
+              </li>
+              <li>
+                price （string）
+                <br>
+                <span style="font-size:14px;color: #666">价格信息展示设置</span>
+              </li>
+            </ul>
+            <h5>方法</h5>
+            <ul>
+              <li>
+              </li>
+            </ul>
+            <h5>使用</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              示例代码
+              <br>
+              &lt;CommodityList/&gt;
+            </blockquote>
+            <h5>注意</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              
+            </blockquote>
+          </div>
+          <div style="width:50%;float: right;"> 
+            <h5>样式</h5>
+            <img src="./resource/uiimages/Dw_CommodityList.png" alt="" width="448px" height="970px">
+          </div>
+        </div>
+        <hr>
+    </div>
+    <!-- end -->
+    <!-- begain -->
+    <div class="item"> 
+      <h3 style="color: #333333;letter-spacing: 2px;">组件名称: ScrollingList</h3>
+      <div style="width:100%;overflow: hidden;">
+          <div style="width:50%;float: left;"> 
+            <h5>属性</h5>
+            <ul>
+              <li>
+                contentStyle （object）
+                <br>
+                <span style="font-size:14px;color: #666">容器样式设置</span>
+              </li>
+              <li>
+                DataArr （array）
+                <br>
+                <span style="font-size:14px;color: #666">列表数据展示</span>
+              </li>
+              <li>
+                itemStyle （object)
+                <br>
+                <span style="font-size:14px;color: #666">内部显示元素样式设置</span>
+              </li>
+            </ul>
+            <h5>方法</h5>
+            <ul>
+              <li>
+                itemFun （function）
+                <br>
+                <span style="font-size:14px;color: #666">点击元素后执行的函数</span>
+              </li>
+            </ul>
+            <h5>使用</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              示例代码
+              <br>
+              &lt;ScrollingList/&gt;
+            </blockquote>
+            <h5>注意</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              
+            </blockquote>
+          </div>
+          <div style="width:50%;float: right;"> 
+            <h5>样式</h5>
+            <img src="./resource/uiimages/Dw_ScrollingList.png" alt="" width="448px" height="970px">
+          </div>
+      </div>
+      <hr>
+    </div>
+    <!-- end -->
+    <!-- begain -->
+    <div class="item"> 
+        <h3 style="color: #333333;letter-spacing: 2px;">组件名称: LoginPage</h3>
+        <div style="width:100%;overflow: hidden;">
+          <div style="width:50%;float: left;"> 
+            <h5>属性</h5>
+            <ul>
+              <li>
+                bgUri （string）
+                <br>
+                <span style="font-size:14px;color: #666">背景图片地址设置</span>
+              </li>
+              <li>
+                  logoUri （string）
+                  <br>
+                  <span style="font-size:14px;color: #666">logo地址图片路径设置</span>
+              </li>
+              <li>
+                contentStyle （object)
+                <br>
+                <span style="font-size:14px;color: #666">容器样式设置</span>
+              </li>
+            </ul>
+            <h5>方法</h5>
+            <ul>
+              <li>
+                loginIn （function）
+                <br>
+                <span style="font-size:14px;color: #666">用户执行登陆函数</span>
+              </li>
+              <li>
+                agreement （function）
+                <br>
+                <span style="font-size:14px;color: #666">用户执行协议函数</span>
+              </li>
+              <li>
+                register （function）
+                <br>
+                <span style="font-size:14px;color: #666">用户执行注册函数</span>
+              </li>
+            </ul>
+            <h5>使用</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              示例代码
+              <br>
+              &lt;LoginPage/&gt;
+            </blockquote>
+            <h5>注意</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              外层用View包裹设置flex为1,position为relative
+            </blockquote>
+          </div>
+          <div style="width:50%;float: right;"> 
+            <h5>样式</h5>
+            <img src="./resource/uiimages/dw_login.png" alt="" width="448px" height="970px">
+          </div>
+        </div>
+        <hr>
+    </div>
+    <!-- end -->
+    <!-- begain -->
+    <div class="item"> 
+        <h3 style="color: #333333;letter-spacing: 2px;">组件名称: PersonalPage</h3>
+        <div style="width:100%;overflow: hidden;">
+          <div style="width:50%;float: left;"> 
+            <h5>属性</h5>
+            <ul>
+              <li>
+                listItem （array）
+                <br>
+                <span style="font-size:14px;color: #666">用户操作列表设置</span>
+              </li>
+              <li>
+                contentStyle （object)
+                <br>
+                <span style="font-size:14px;color: #666">容器样式设置</span>
+              </li>
+              <li>
+                islogin （boolean）
+                <br>
+                <span style="font-size:14px;color: #666">判断当前用户是否登陆</span>
+              </li>
+            </ul>
+            <h5>方法</h5>
+            <ul>
+              <li>
+                loginOut （function）
+                <br>
+                <span style="font-size:14px;color: #666">用户执行退出函数</span>
+              </li>
+              <li>
+                editFun （function）
+                <br>
+                <span style="font-size:14px;color: #666">用户执行编辑信息函数</span>
+              </li>
+            </ul>
+            <h5>使用</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              示例代码
+              <br>
+              &lt;PersonalPage/&gt;
+            </blockquote>
+            <h5>注意</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              
+            </blockquote>
+          </div>
+          <div style="width:50%;float: right;"> 
+            <h5>样式</h5>
+            <img src="./resource/uiimages/dw_personal.png" alt="" width="448px" height="970px">
+          </div>
+        </div>
+        <hr>
+    </div>
+    <!-- end -->
+    <!-- begain -->
+    <div class="item"> 
+        <h3 style="color: #333333;letter-spacing: 2px;">组件名称: Label</h3>
+        <div style="width:100%;overflow: hidden;">
+          <div style="width:50%;float: left;"> 
+            <h5>属性</h5>
+            <ul>
+              <li>
+                itemStyle （object）
+                <br>
+                <span style="font-size:14px;color: #666">内部显示标签的样式</span>
+              </li>
+              <li>
+                contentStyle （object)
+                <br>
+                <span style="font-size:14px;color: #666">容器样式设置</span>
+              </li>
+              <li>
+                labelList （array）
+                <br>
+                <span style="font-size:14px;color: #666">标签展示的内容</span>
+              </li>
+            </ul>
+            <h5>方法</h5>
+            <ul>
+              <li>
+              </li>
+            </ul>
+            <h5>使用</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              示例代码
+              <br>
+              &lt;Label/&gt;
+            </blockquote>
+            <h5>注意</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              
+            </blockquote>
+          </div>
+          <div style="width:50%;float: right;"> 
+            <h5>样式</h5>
+            <img src="./resource/uiimages/dw_label.png" alt="" width="448px" height="970px">
+          </div>
+        </div>
+        <hr>
+    </div>
+    <!-- end -->
+    <!-- begain -->
+    <div class="item"> 
+        <h3 style="color: #333333;letter-spacing: 2px;">组件名称: Progress</h3>
+        <div style="width:100%;overflow: hidden;">
+          <div style="width:50%;float: left;"> 
+            <h5>属性</h5>
+            <ul>
+              <li>
+                title （string）
+                <br>
+                <span style="font-size:14px;color: #666">左侧标题设置信息</span>
+              </li>
+              <li>
+                contentStyle （object)
+                <br>
+                <span style="font-size:14px;color: #666">容器样式设置</span>
+              </li>
+              <li>
+                num （number）
+                <br>
+                <span style="font-size:14px;color: #666">当前进度设置</span>
+              </li>
+            </ul>
+            <h5>方法</h5>
+            <ul>
+              <li>
+              </li>
+            </ul>
+            <h5>使用</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              示例代码
+              <br>
+              &lt;Progress/&gt;
+            </blockquote>
+            <h5>注意</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              
+            </blockquote>
+          </div>
+          <div style="width:50%;float: right;"> 
+            <h5>样式</h5>
+            <img src="./resource/uiimages/dw_progress.png" alt="" width="448px" height="970px">
+          </div>
+        </div>
+        <hr>
+    </div>
+    <!-- end -->
+    <!-- begain -->
+    <div class="item"> 
+        <h3 style="color: #333333;letter-spacing: 2px;">组件名称: Popup</h3>
+        <div style="width:100%;overflow: hidden;">
+          <div style="width:50%;float: left;"> 
+            <h5>属性</h5>
+            <ul>
+              <li>
+                isShow （boolean）
+                <br>
+                <span style="font-size:14px;color: #666">是否展示当=当前弹框</span>
+              </li>
+              <li>
+                isTransparent （boolean)
+                <br>
+                <span style="font-size:14px;color: #666">设置当前弹框是否透明</span>
+              </li>
+              <li>
+                title （string）
+                <br>
+                <span style="font-size:14px;color: #666">内容标题</span>
+              </li>
+              <li>
+                content （string）
+                <br>
+                <span style="font-size:14px;color: #666">内容信息设置</span>
+              </li>
+            </ul>
+            <h5>方法</h5>
+            <ul>
+              <li>
+                trueFun （function）
+                <br>
+                <span style="font-size:14px;color: #666">点击确认执行的函数</span>
+              </li>
+              <li>
+                falseFun （function）
+                <br>
+                <span style="font-size:14px;color: #666">点击取消执行的函数</span>
+              </li>
+            </ul>
+            <h5>使用</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              示例代码
+              <br>
+              &lt;Popup/&gt;
+            </blockquote>
+            <h5>注意</h5>
+            <blockquote style="font-size:14px;color: #333333;line-height: 22px;">
+              
+            </blockquote>
+          </div>
+          <div style="width:50%;float: right;"> 
+            <h5>样式</h5>
+            <img src="./resource/uiimages/dw_pop.png" alt="" width="448px" height="970px">
+          </div>
+        </div>
+        <hr>
+    </div>
+    <!-- end -->
+  </div>
+</body>
+</html>
