@@ -11,7 +11,16 @@ import {
   Popup
 } from './src/component/index'
 
+import {
+  scaleSizeH,
+  scaleSizeW,
+  isIphoneX,
+  getStatusBarHeight,
+  setSpText
+} from './src/method/index'
+
 export {
+  // component
   InformationList,
   CommentList,
   HomeTab,
@@ -21,5 +30,12 @@ export {
   PersonalPage,
   Label,
   Progress,
-  Popup
+  Popup,
+
+  // method
+  scaleSizeH,
+  scaleSizeW,
+  isIphoneX,
+  getStatusBarHeight,
+  setSpText
 }
